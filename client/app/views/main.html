@@ -1,23 +1,24 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<section class="nn-home fullScreen"  style="background:#eee;">
+  <div id="a">
+    <div id="b">
+      <div id="content">
+        <div class="container" style="z-index:2; position: relative;">
+          <div class="col-xs-12 col-sm-6 haightCol">
+            <button ng-click="changeView('home')" id="haightBtn" class="pageBtn haightBtn hvr-ripple-out">HAIGHT</button>
+          </div>
+          <div class="col-xs-12 col-sm-6 broadwayCol">
+            <button ng-click="changeView('home')" id="broadwayBtn" class="pageBtn broadwayBtn hvr-ripple-out">BROADWAY</button>
+          </div>
+        </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+        <div class="container">
+          <div id="homeBG1" class="homeBG" style="background:url('http://nocnocs.com/wp-content/uploads/2011/06/01.jpg') no-repeat; background-size:cover;height:100%;width:50%;position:absolute;top:0; left:0;z-index:0;">
+          </div>
+          <div id="homeBG2" class="homeBG" style="background:url('https://hoodwork-production.s3.amazonaws.com/uploads/story/image/10435/IMG_8442.jpg') no-repeat; background-size:cover;height:100%;width:50%;position:absolute; top:0; left:50%; z-index:1;">
+          </div>
+        </div>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+      </div>
+    </div>
+  </div>
+</section>

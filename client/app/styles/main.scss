@@ -1,91 +1,93 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-// bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import url(https://fonts.googleapis.com/css?family=Mystery+Quest|Monoton|Roboto:400,700,400italic,300);
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+$font-title-haight: 'Mystery Quest', cursive;
+
+$font-title-broadway: 'Monoton', cursive;
+
+$font-body: 'Roboto', sans-serif;
+
+html, body, #a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: $font-body;
+    background: #0a0016;
 }
 
-body {
-  padding: 0;
+.header{
+  position: fixed;
+  height:80px;
+  background:url(../images/nocnoclogo.svg) no-repeat 50% 50%;
+  background-size: contain;
+  width:100%;
+  z-index: 100;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+.footer{
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+  color: #fff;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
+#a {
+    display: table;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+#b {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+#content {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+}
+
+.fullScreen{
+  height:100%;
+  width:100%;
+}
+
+.container{
+  padding:0;
+}
+
+.nn-home{
+  .haightBtn{
+    font-family: $font-title-haight;
+  }
+  .broadwayBtn{
+    font-family: $font-title-broadway;
+  }
+  .haightCol{
+    text-align: right;
+  }
+  .broadwayCol{
+    text-align: left;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+  button{
+    background: none;
+    border: none;
+    font-size: 60px;
+    color:#FFF;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+
+  .homeBG{
+    -webkit-filter: brightness(30%); 
+    filter: blur(10px);
+
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+
+  .homeBGHover{
+    -webkit-filter: brightness(100%); 
+        filter: blur(0px);
+        -webkit-transition: all 0.5s;
   }
 }
